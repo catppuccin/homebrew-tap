@@ -11,6 +11,7 @@
 	<a href="https://github.com/catppuccin/homebrew-tap/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/homebrew-tap?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
+<<<<<<< HEAD
 ## Usage
 
 TODO
@@ -26,9 +27,10 @@ Or `brew tap catppuccin/tap` and then `brew install <formula>`.
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [Hamothy](https://github.com/sgoudham)
 
 &nbsp;
 
