@@ -4,7 +4,6 @@
 
 root = true
 
-
 [*]
 charset = utf-8
 indent_size = 4
@@ -16,5 +15,5 @@ trim_trailing_whitespace = true
 [*.{diff,md}]
 trim_trailing_whitespace = false
 
-[*.yml]
+[*.{yml,rb}]
 indent_size = 2
