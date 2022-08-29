@@ -14,8 +14,8 @@ class MdbookCatppuccin < Formula
 
     system bin/"mdbook-catppuccin", "install"
 
-    assert_predicate theme/"index.hbs", :exist?
-    assert_predicate theme/"catppuccin.css", :exist?
-    assert_predicate theme/"catppuccin-highlight.css", :exist?
+    assert_predicate (testpath/"theme/index.hbs"), :exist?
+    assert_predicate (testpath/"theme/catppuccin.css"), :exist?
+    assert_predicate (testpath/"theme/catppuccin-highlight.css"), :exist?
   end
 end
