@@ -31,13 +31,4 @@ jobs:
 
       - run: brew test-bot --only-setup
 
-      - run: brew test-bot --only-formulae
-
       - run: brew test ./Formula/mdbook-catppuccin.rb
-
-      - name: Upload bottles as artifact
-        if: ${{ github.ref == 'refs/heads/main' }}
-        uses: actions/upload-artifact@main
-        with:
-          name: bottles
-          path: '*.bottle.*'
