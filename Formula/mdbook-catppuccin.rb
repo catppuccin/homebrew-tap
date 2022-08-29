@@ -6,7 +6,7 @@ class MdbookCatppuccin < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/catppuccin/homebrew-tap/releases/download/mdbook-catppuccin-0.1.1"
+    root_url "https://github.com/catppuccin/homebrew-tap/releases/download"
     sha256 cellar: :any_skip_relocation, big_sur:        "7a0a2d543fbaa815bdc522491af75b182d0c1be2855c1562a35baa1f9fe23713"
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "9e6cd573de0afdb4838ab71a3d23db4cf29a3d51468cba60579819ed11c15c11"
   end
