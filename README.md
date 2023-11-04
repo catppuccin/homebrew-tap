@@ -13,23 +13,13 @@
 
 ## Usage
 
-TODO
+Please refer to the formulae's respective repository/README for usage notes.
+To get started with brew, see `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
 
 ## 🙋 FAQ
 
-## How do I install these formulae?
-
-`brew install catppuccin/tap/<formula>`
-
-Or `brew tap catppuccin/tap` and then `brew install <formula>`.
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
-
-## 💝 Thanks to
-
-- [Hamothy](https://github.com/sgoudham)
+- Q: **_"How do I install these formulae?"_**\
+  A: `brew install catppuccin/tap/<formula>`
 
 &nbsp;
 
