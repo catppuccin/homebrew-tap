@@ -1,0 +1,23 @@
+name: Brew Install & Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  install-test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - run: |
+          brew install --formula ./Formula/*.rb
+
+      - run: |
+          brew test ./Formula/*.rb
