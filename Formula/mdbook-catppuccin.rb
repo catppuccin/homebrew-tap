@@ -1,5 +1,5 @@
 class MdbookCatppuccin < Formula
-  desc "🎊 Soothing pastel theme for mdBook"
+  desc "Soothing pastel theme for mdBook"
   homepage "https://github.com/catppuccin/mdBook"
   url "https://github.com/catppuccin/mdBook/archive/refs/tags/v2.0.1.tar.gz"
   sha256 "75062a0e4561d0b067c8b200ba4fc7eb66df59e15e568de08bcf800ab76c8781"
