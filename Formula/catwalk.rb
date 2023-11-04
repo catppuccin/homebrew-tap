@@ -1,5 +1,5 @@
 class Catwalk < Formula
-  desc "Sweet program that takes in four showcase images and displays them all at once"
+  desc "Soothing preview image generator for the high-spirited!"
   homepage "https://github.com/catppuccin/toolbox/tree/main/catwalk"
   url "https://github.com/catppuccin/toolbox/archive/refs/tags/catwalk-v1.2.0.tar.gz"
   sha256 "79b8f28432a97d20c99d8e6015fcc7e459c05e5932a07e693cf05231e6e9be05"
