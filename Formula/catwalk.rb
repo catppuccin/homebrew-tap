@@ -8,7 +8,6 @@ class Catwalk < Formula
 
   depends_on "pkg-config" => :build
   depends_on "rust" => :build
-  depends_on "webp" => :build
 
   def install
     system "cargo", "install", *std_cargo_args(path: "catwalk")
