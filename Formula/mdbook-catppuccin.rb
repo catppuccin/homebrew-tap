@@ -8,28 +8,6 @@ class MdbookCatppuccin < Formula
 
   depends_on "rust" => :build
 
-  on_macos do
-    on_intel do
-      url "https://github.com/catppuccin/mdBook/releases/download/v2.0.1/mdbook-catppuccin-x86_64-apple-darwin.tar.gz"
-      sha256 "ce2c10b5bee597d5ce063796b410d8841b23c94f7c548a515e9bd22cc31c4a75"
-
-      def install
-        bin.install "mdbook-catppuccin-x86_64-apple-darwin" => "mdbook-catppuccin"
-      end
-    end
-  end
-
-  on_linux do
-    on_intel do
-      url "https://github.com/catppuccin/mdBook/releases/download/v2.0.1/mdbook-catppuccin-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "38abdc0998402d975485757b2477dd9d5ad736f67706872988e890d0d641c6c9"
-
-      def install
-        bin.install "mdbook-catppuccin-x86_64-unknown-linux-gnu" => "mdbook-catppuccin"
-      end
-    end
-  end
-
   def install
     system "cargo", "install", *std_cargo_args
   end
