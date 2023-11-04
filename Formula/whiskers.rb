@@ -6,6 +6,12 @@ class Whiskers < Formula
   license "MIT"
   head "https://github.com/catppuccin/toolbox.git", branch: "main"
 
+  bottle do
+    root_url "https://ghcr.io/v2/catppuccin/tap"
+    sha256 cellar: :any_skip_relocation, ventura:      "90e22a07c91d887e8cad29f1592a319892a67b55d7062b72c108fa439db8411c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9ae003db7c21c2ce628f948b776f70f90dc7d3b89e7ab113a584d6d6bcc0f559"
+  end
+
   depends_on "rust" => :build
 
   def install
