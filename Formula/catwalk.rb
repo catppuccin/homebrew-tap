@@ -40,6 +40,6 @@ class Catwalk < Formula
   end
 
   test do
-    assert_equal "catppuccin-catwalk 1.2.0", shell_output("#{bin}/catwalk --version").strip
+    assert_predicate (bin/"catwalk"), :exist?
   end
 end

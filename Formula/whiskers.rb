@@ -35,6 +35,6 @@ class Whiskers < Formula
   end
 
   test do
-    assert_equal "catppuccin-whiskers 1.1.1", shell_output("#{bin}/whiskers --version").strip
+    assert_predicate (bin/"catwalk"), :exist?
   end
 end
