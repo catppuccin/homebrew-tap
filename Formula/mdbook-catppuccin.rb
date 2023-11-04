@@ -6,6 +6,12 @@ class MdbookCatppuccin < Formula
   license "MIT"
   head "https://github.com/catppuccin/mdbook.git", branch: "main"
 
+  bottle do
+    root_url "https://ghcr.io/v2/catppuccin/tap"
+    sha256 cellar: :any_skip_relocation, ventura:      "d933396fd696d07d4ad59bf4fb3804e4c5c7d3c10e8e86b1f584de8dd0520650"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b8362ca2a94bbbd274e7bf4c2a60ff97b843f0a0fa4a1a11426907f884e66a26"
+  end
+
   depends_on "rust" => :build
 
   def install
