@@ -1,8 +1,8 @@
 class MdbookCatppuccin < Formula
   desc "Soothing pastel theme for mdBook"
   homepage "https://github.com/catppuccin/mdBook"
-  url "https://github.com/catppuccin/mdBook/archive/refs/tags/v2.0.1.tar.gz"
-  sha256 "75062a0e4561d0b067c8b200ba4fc7eb66df59e15e568de08bcf800ab76c8781"
+  url "https://github.com/catppuccin/mdBook/archive/refs/tags/v2.1.0.tar.gz"
+  sha256 "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
   license "MIT"
   head "https://github.com/catppuccin/mdbook.git", branch: "main"
 
@@ -16,6 +16,7 @@ class MdbookCatppuccin < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
+    generate_completions_from_executable(bin/"mdbook-catppuccin", "completion")
   end
 
   test do
