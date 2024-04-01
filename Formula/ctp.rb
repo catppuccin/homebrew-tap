@@ -8,8 +8,9 @@ class Ctp < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/catppuccin/tap"
-    sha256 cellar: :any_skip_relocation, ventura:      "e55e62b2da4275d8e06c3cbdafc41b3a07bbcc67e0b164d07b8ac984861c19c0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "04cc61a92e5a948ef058193b491d965ee7e719f4c04bf54c96216a23744eb789"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, ventura:      "3f59595e141a8afdfdc2f722d0f722a0d3af67fafed1fd1217abbbb471e0cc1a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "08e0d1a6ab38e9bbf3ad2895986b1cd6c7f12fc0234a4c25eea30e173aebb04d"
   end
 
   depends_on "go" => :build
