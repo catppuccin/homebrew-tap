@@ -21,7 +21,7 @@ class Ctp < Formula
       -X main.version=#{version}
       -X main.date=#{time.iso8601}
     ]
-    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/ctp"
+    system "go", "build", *std_go_args(ldflags:), "./cmd/ctp"
   end
 
   test do
