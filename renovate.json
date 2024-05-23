@@ -1,6 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["catppuccin/toolbox"],
+      "versioning": "regex:^(?<name>\\w+-)?v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)?$"
+    }
+  ]
   "homebrew": {
     "commitMessageTopic": "Homebrew Formula {{depName}}",
     "extractVersion": "^\\w+-(?<version>.+)",
