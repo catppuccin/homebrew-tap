@@ -3,6 +3,7 @@
   "extends": ["config:recommended"],
   "homebrew": {
     "commitMessageTopic": "Homebrew Formula {{depName}}",
+    "extractVersion": "^\\w-(?<version>.+)",
     "fileMatch": ["^Formula/[^/]+[.]rb$"]
   }
 }
