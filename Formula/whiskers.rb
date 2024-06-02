@@ -6,6 +6,11 @@ class Whiskers < Formula
   license "MIT"
   head "https://github.com/catppuccin/toolbox.git", branch: "main"
 
+  livecheck do
+    url :stable
+    regex(/^whiskers[._-]v?(\d+(?:\.\d+)+)$/i)
+  end
+
   bottle do
     root_url "https://ghcr.io/v2/catppuccin/tap"
     sha256 cellar: :any_skip_relocation, ventura:      "4a2a601b29006a787bf46a5e3e7b1d1616f0dfbf62870ce1cd96830376d70340"
@@ -20,10 +25,5 @@ class Whiskers < Formula
 
   test do
     assert_predicate (bin/"whiskers"), :exist?
-  end
-
-  livecheck do
-    url :stable
-    regex /^whiskers[._-]v?(\d+(?:\.\d+)+)$/i
   end
 end

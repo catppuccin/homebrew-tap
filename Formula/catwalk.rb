@@ -6,6 +6,11 @@ class Catwalk < Formula
   license "MIT"
   head "https://github.com/catppuccin/toolbox.git", branch: "main"
 
+  livecheck do
+    url :stable
+    regex(/^catwalk[._-]v?(\d+(?:\.\d+)+)$/i)
+  end
+
   bottle do
     root_url "https://ghcr.io/v2/catppuccin/tap"
     sha256 cellar: :any_skip_relocation, ventura:      "20a88a941680a641a88bff0d6e5ebdde2d1f8d8efc7e4db0ae91ef70bb8388ee"
@@ -22,10 +27,5 @@ class Catwalk < Formula
 
   test do
     assert_predicate (bin/"catwalk"), :exist?
-  end
-
-  livecheck do
-    url :stable
-    regex /^catwalk[._-]v?(\d+(?:\.\d+)+)$/i
   end
 end
