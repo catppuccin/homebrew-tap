@@ -21,4 +21,9 @@ class Whiskers < Formula
   test do
     assert_predicate (bin/"whiskers"), :exist?
   end
+
+  livecheck do
+    url :stable
+    regex /^whiskers[._-]v?(\d+(?:\.\d+)+)$/i
+  end
 end

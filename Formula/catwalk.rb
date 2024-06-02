@@ -23,4 +23,9 @@ class Catwalk < Formula
   test do
     assert_predicate (bin/"catwalk"), :exist?
   end
+
+  livecheck do
+    url :stable
+    regex /^catwalk[._-]v?(\d+(?:\.\d+)+)$/i
+  end
 end
