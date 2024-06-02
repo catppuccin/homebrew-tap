@@ -1,0 +1,18 @@
+on:
+  schedule:
+  - cron: "0 9 * * *"  # renovate gets into work at 9:00 on the dot
+  workflow_dispatch:
+
+name: "Auto-update Homebrew formulae"
+
+jobs:
+  autoupdate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check for formula updates
+      uses: dawidd6/action-homebrew-bump-formula@v3
+      with:
+        # PAT with only the 'public_repo' scope enabled
+        token: ${{secrets.AUTOUPDATE_PAT}}
+        tap: catppuccin/homebrew-tap
+        livecheck: true
