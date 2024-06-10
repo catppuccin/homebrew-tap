@@ -15,7 +15,7 @@ class Whiskers < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args(path: "whiskers")
+    system "cargo", "install"
   end
 
   test do

@@ -16,7 +16,7 @@ class Catwalk < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args(path: "catwalk")
+    system "cargo", "install"
     generate_completions_from_executable(bin/"catwalk", "completion")
   end
 
