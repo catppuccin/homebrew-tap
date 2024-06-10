@@ -8,8 +8,8 @@ class Catwalk < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/catppuccin/tap"
-    sha256 cellar: :any_skip_relocation, ventura:      "9029cd1bcc0a2671ee04114e49920106fb80fb19f4c01f69c156c56ded5fe7c0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f2efe34b962812037c092f8df553a06860cbd1a02407ea6c5f0a0b94bcc42d75"
+    sha256 cellar: :any_skip_relocation, ventura:      "360dbeac75682cc14b6cca257d94b3a5d795fd1ae49f5a69c4363273761eb694"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "743173b145c594325f3fcd453624b3ab2c030578f42d3cc23842f338a54cff44"
   end
 
   depends_on "pkg-config" => :build
