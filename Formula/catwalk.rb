@@ -2,7 +2,7 @@ class Catwalk < Formula
   desc "Soothing preview image generator for the high-spirited!"
   homepage "https://github.com/catppuccin/catwalk"
   url "https://github.com/catppuccin/toolbox/archive/refs/tags/catwalk-v1.3.1.tar.gz"
-  sha256 "a96b5284a02bfe1e53168325e59784b0e79c3c816f5c64fdf1e7944c722142e6"
+  sha256 "b9093e5f93aa94526675c03f921f8d94d1832640d281b0c3f96fa00c00015213"
   license "MIT"
   head "https://github.com/catppuccin/catwalk.git", branch: "main"
 
