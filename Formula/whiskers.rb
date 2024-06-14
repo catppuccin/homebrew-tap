@@ -1,8 +1,8 @@
 class Whiskers < Formula
   desc "Soothing port creation tool for the high-spirited!"
   homepage "https://github.com/catppuccin/whiskers"
-  url "https://github.com/catppuccin/whiskers/archive/refs/tags/v2.3.0.tar.gz"
-  sha256 "4ce03d8cbb7135c0a34c834c4cfa2995af3a266f63d55fd7eb1146a022ed2244"
+  url "https://github.com/catppuccin/whiskers/archive/refs/tags/v2.4.0.tar.gz"
+  sha256 "2316ec0ccd71f241147b32802247b33a9739cef191d8c3bfd53dbe7cbe6dccd7"
   license "MIT"
   head "https://github.com/catppuccin/whiskers.git", branch: "main"
 
