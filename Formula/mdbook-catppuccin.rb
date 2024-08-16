@@ -1,8 +1,8 @@
 class MdbookCatppuccin < Formula
   desc "Soothing pastel theme for mdBook"
   homepage "https://github.com/catppuccin/mdBook"
-  url "https://github.com/catppuccin/mdBook/archive/refs/tags/v2.1.0.tar.gz"
-  sha256 "eb4a1024ecdaae490b994ae0cb88873ad6c11c0b94cd7b0cb73db77e7138d8af"
+  url "https://github.com/catppuccin/mdBook/archive/refs/tags/v2.2.0.tar.gz"
+  sha256 "74f46c619371e8898bec4b0d7b3765f6fd9a91e14fcc2f4ef2f718bb08f10f47"
   license "MIT"
   head "https://github.com/catppuccin/mdbook.git", branch: "main"
 
