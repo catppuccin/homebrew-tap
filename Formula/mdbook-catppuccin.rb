@@ -8,8 +8,8 @@ class MdbookCatppuccin < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/catppuccin/tap"
-    sha256 cellar: :any_skip_relocation, ventura:      "4ffdd7760c56a96922306d6b21fe95cb4debdc212648b44de4d343696f447a76"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a8cd6642b1b46340e853e7597a6b205893fcc7c50d26b26366df11480f995606"
+    sha256 cellar: :any_skip_relocation, ventura:      "42dd5c85c3f1371f967b76c411b5838cfd01097b4cf66c0b6e8dbadf57461721"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8ecec05eaecb58657cb80195ecafce93522bc958bb819b4356f07c66f0f1edad"
   end
 
   depends_on "rust" => :build
