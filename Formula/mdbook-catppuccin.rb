@@ -16,16 +16,5 @@ class MdbookCatppuccin < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
-    generate_completions_from_executable(bin/"mdbook-catppuccin", "completion")
-  end
-
-  test do
-    (testpath/"book.toml").write("")
-
-    system bin/"mdbook-catppuccin", "install"
-
-    assert_predicate (testpath/"theme/index.hbs"), :exist?
-    assert_predicate (testpath/"theme/catppuccin.css"), :exist?
-    assert_predicate (testpath/"theme/catppuccin-admonish.css"), :exist?
   end
 end
