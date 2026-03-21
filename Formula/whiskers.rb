@@ -19,6 +19,6 @@ class Whiskers < Formula
   end
 
   test do
-    assert_predicate (bin/"whiskers"), :exist?
+    assert_path_exists (bin/"whiskers"), :exist?
   end
 end
