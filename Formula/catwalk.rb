@@ -21,6 +21,6 @@ class Catwalk < Formula
   end
 
   test do
-    assert_predicate (bin/"catwalk"), :exist?
+    assert_path_exists (bin/"catwalk"), :exist?
   end
 end
