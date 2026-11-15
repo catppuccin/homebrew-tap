@@ -8,8 +8,8 @@ class Whiskers < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/catppuccin/tap"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "4e2ea79d8f57dce78e47052db19fccb7bac78e98b425b42e3cac2ead0f91a403"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "80137c0f7e726d938af5f99f9c2cb1f8fccbcbf0a45ce7b7c99b8b8eba502077"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "4382f08139bfa754049b0338a05b1b3dcbf4fcfea8d68e9a8817f8154a2fb53c"
+    sha256 cellar: :any,                 x86_64_linux: "b6a2788ad54ecb0561667994a77105efb17979af4f472f10ff2c33e3a988ef53"
   end
 
   depends_on "rust" => :build
